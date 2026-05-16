@@ -38,7 +38,7 @@ L5_Adversarial_Search_Game_AI/
 
 ### Version 1 — TicTacToe Adversarial Search
 
-![V1 TicTacToe – Minimax, AI wins](<ver1 image.png>)
+![V1 TicTacToe – Minimax, AI wins](<Version1_TicTacToe_Adversarial_Search/ver1 image.png>)
 
 **What is happening:**
 - Algorithm: **Minimax** at depth 9 (full tree, no pruning)
@@ -54,7 +54,7 @@ L5_Adversarial_Search_Game_AI/
 
 ### Version 2 — Connect-3 4×4 (Alpha-Beta vs Minimax comparison)
 
-![V2 Connect3 – Alpha-Beta, 284 nodes, 96 pruned](<ver2 image.png>)
+![V2 Connect3 – Alpha-Beta, 284 nodes, 96 pruned](<Version2_Connect3_Adversarial_Search/ver2 image.png>)
 
 **What is happening (Alpha-Beta):**
 - Algorithm: **Alpha-Beta Pruning** at depth 5
@@ -66,7 +66,7 @@ L5_Adversarial_Search_Game_AI/
 
 ---
 
-![V2 Connect3 – Minimax same game, 344 nodes, 0 pruned](<ver2.2 image.png>)
+![V2 Connect3 – Minimax same game, 344 nodes, 0 pruned](<Version2_Connect3_Adversarial_Search/ver2.2 image.png>)
 
 **What is happening (Minimax — same board, same depth):**
 - Algorithm: **Minimax** (no pruning) at depth 5
@@ -80,7 +80,7 @@ L5_Adversarial_Search_Game_AI/
 
 ### Version 3 — Horizon Effect Lab
 
-![V3 Horizon Lab – Free Play mode](<ver3 image.png>)
+![V3 Horizon Lab – Free Play mode](<Version3_Horizon_Effect_Lab/ver3 image.png>)
 
 **What is happening (Free Play):**
 - Mode: **Free Play** (no scenario loaded)
@@ -90,7 +90,7 @@ L5_Adversarial_Search_Game_AI/
 
 ---
 
-![V3 Horizon Lab – Classic Fork scenario, horizon warning active](<ver3.2 image.png>)
+![V3 Horizon Lab – Classic Fork scenario, horizon warning active](<Version3_Horizon_Effect_Lab/ver3.2 image.png>)
 
 **What is happening (Horizon Effect – Classic Fork):**
 - Scenario **"Horizon Effect – Classic Fork"** is loaded (press `1` then `E`)
@@ -107,7 +107,7 @@ L5_Adversarial_Search_Game_AI/
 
 ### Version 4 — JSE Trading Duel
 
-![V4 JSE Trading Duel – Alpha-Beta, both players draw at R1440](<ver4 image.png>)
+![V4 JSE Trading Duel – Alpha-Beta, both players draw at R1440](<Version4_JSE_Trading_Duel/ver4 image.png>)
 
 **What is happening:**
 - Algorithm: **Alpha-Beta** at depth 3
