@@ -44,7 +44,7 @@ def get_ai_move(game, algorithm, depth_limit, use_ordering, evaluator, orderer):
     stats = {'nodes':0,'pruned':0,'best_move':None,'best_score':0,'ordering':use_ordering}
     ai_p = game.current_player
     if algorithm == ALG_MINIMAX:
-        mv, sc, nd = minimax(game, ai_p)
+        mv, sc, nd = minimax(game, ai_p, max_depth=depth_limit)
         stats.update(nodes=nd, best_move=mv, best_score=sc)
     elif algorithm == ALG_AB:
         mv, sc, nd, pr = alpha_beta(game, ai_p, use_ordering, orderer)

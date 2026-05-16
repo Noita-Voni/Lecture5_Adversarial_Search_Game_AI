@@ -184,7 +184,12 @@ class Visualizer:
     # ─── stats panel ──────────────────────────────────────────────────────────
 
     def _draw_panel(self, game, stats, algorithm, depth_limit, show_heuristic, heur_bd):
-        px, py = PANEL_X, 8
+        # Background card for the right panel
+        pygame.draw.rect(self.screen, PANELBG,
+                         (PANEL_X - 4, 8, PANEL_W + 4, WINDOW_H - 16),
+                         border_radius=10)
+
+        px, py = PANEL_X + 4, 14
         lh = 21
 
         def ln(txt, colour=WHITE, font=None, indent=0):
@@ -196,7 +201,7 @@ class Visualizer:
 
         def sep():
             nonlocal py
-            pygame.draw.line(self.screen, LINE_C,(px,py+2),(px+PANEL_W,py+2),1)
+            pygame.draw.line(self.screen, LINE_C,(px,py+2),(px+PANEL_W-12,py+2),1)
             py += 7
 
         ln("[ TRADING DUEL AI ]", CYAN, self.fnt_xl)

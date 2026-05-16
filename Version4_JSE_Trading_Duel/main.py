@@ -98,7 +98,11 @@ def main():
                 elif k == pygame.K_l:  algorithm = ALG_DEPTH
                 elif k == pygame.K_UP:   depth_limit = min(5, depth_limit+1)
                 elif k == pygame.K_DOWN: depth_limit = max(1, depth_limit-1)
-                elif k == pygame.K_h:  show_heuristic = not show_heuristic
+                elif k == pygame.K_h:
+                    show_heuristic = not show_heuristic
+                    if show_heuristic:
+                        evaluator.evaluate(game)
+                        heur_bd = dict(evaluator.last_breakdown)
 
                 elif k == pygame.K_a:
                     # AI makes move now
